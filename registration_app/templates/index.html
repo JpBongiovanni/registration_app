@@ -61,5 +61,18 @@
             </form>
         </section>
     </div>
+    <script>
+        const pwdButton = document.querySelector("#password");
+
+        const togglebutton = document.querySelector("#toggle-button");
+
+        toggleButton.addEventListener('click', ()=>{
+            if(pwdButton.type === "password"){
+                pwdButton.type = "text";
+            } else {
+                pwdButton.type = "password"
+            }
+        })
+    </script>
 </body>
 </html>

@@ -52,5 +52,4 @@ class User(models.Model):
     last_name = models.CharField(max_length=45)
     email = models.EmailField(unique=True)
     password = models.CharField(max_length=255)
-
     objects = UserManager()
