@@ -1,0 +1,1 @@
+# registration application: Pull directly from Github and follow the readme directions to apply to your own django project. Login application utilized bcrypt encryption to ensure password security and include input validation for all registration or login information.
