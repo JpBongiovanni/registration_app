@@ -49,3 +49,14 @@ def success(request):
 def logout(request):
     request.session.clear()
     return redirect('/')
+
+def captcha(request):
+        if request.POST:
+            form = CaptchaTestForm(request.POST)
+
+            if form.is_valid():
+                human = True
+        else:
+            form = CaptchaTestform()
+
+        return render(request, 'index.html', ['form': form])

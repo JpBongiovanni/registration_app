@@ -47,6 +47,7 @@ class UserManager(models.Manager):
         )
 
 
+
 class User(models.Model):
     first_name = models.CharField(max_length=45)
     last_name = models.CharField(max_length=45)
